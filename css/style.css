@@ -1,0 +1,429 @@
+/*
+Color Usage
+Tint Lv2: #0B8AFC;
+Tint Lv1: #0179E5;
+Primary color: #0056A4;
+Shade Lv1: #004685;
+Shade Lv2: #003666;
+Black: #202020;
+*/
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.smallText {
+  font-size: 0.625rem;
+}
+
+a.btn {
+  display: block;
+  padding: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+/* Page Header Style */
+
+#pageHeader {
+  background: #0056A4;
+  padding: 0.5rem 0;
+}
+
+#pageHeader #logo {
+  width: 7.5rem;
+  height: auto;
+}
+
+#pageHeader #logo:hover {
+  opacity: 0.8;
+}
+
+#pageHeader nav {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#mainNav {
+  margin-top: 1rem;
+}
+
+#mainNav .nav-item {
+  margin-left: 1rem;
+}
+
+#mainNav a {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+}
+
+#mainNav a:hover, #mainNav a.active {
+  color: #0056A4;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Main Section */
+
+.jumbotron {
+  background: #0056A4;
+  border-radius: 0;
+}
+
+#carousel {
+  color: #fff;
+}
+
+#carousel svg {
+  fill: #fff;
+}
+
+#carousel a.btn {
+  display: block;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#featuredJobs h3 {
+  margin-bottom: 1.5rem;
+}
+
+#featuredJobs .container>hr {
+  width: 50%;
+  border-color: #003666;
+  border-width: 5px;
+}
+
+a.btn-more {
+  color: #0179E5;
+  border: 2px solid #0179E5;
+  margin: 1rem 0 2rem 0;
+}
+
+a.btn-more:hover {
+  color: #fff;
+}
+
+#aboutUs h1,
+#searchForm h1,
+#jobDes h1,
+#news h1,
+#newsDetail h1 {
+  margin-top: 2rem;
+}
+
+#industryFocus h3 {
+  margin-top: 1.5rem;
+}
+
+#industryFocus svg, #specializedRoles svg {
+  fill: #003666;
+  margin-top: 2rem;
+}
+
+#specializedRoles svg {
+  fill: #fff;
+  stroke: #003666;
+  stroke-width: 5px;
+}
+
+#specializedRoles svg circle {
+  r: 90px;
+}
+
+#industryFocus h5, #specializedRoles h5 {
+  margin: 1rem 0 2rem 0;
+}
+
+#whyChooseUs {
+  background-color: #004685;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+#whyChooseUs h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+#whyChooseUs div.row h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 5.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* #whyChooseUs .special  {
+  line-height: 0.5;
+} */
+
+#whyChooseUs div.row p {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#ourTeam h1 {
+  margin-bottom: 2rem;
+}
+
+#ourTeam svg {
+  border-radius: 5px;
+}
+
+#ourTeam svg rect {
+  fill: grey;
+}
+
+#ourTeam h5, #ourTeam p {
+  text-transform: uppercase;
+}
+
+#ourTeam h5 {
+  margin-top: 1rem;
+}
+
+#ourClient {
+  background-color: grey;
+  padding: 2rem;
+}
+
+#contactForm h1 {
+  margin-bottom: 1rem;
+}
+
+#contactForm form .form-group {
+  margin: 1.5rem 0;
+}
+
+#contactForm form label,
+#jobApplyForm label {
+  font-weight: 700;
+}
+
+#contactForm form .radio-btn-wrapper {
+  border: 2px solid grey;
+  padding: 1rem;
+  border-radius: 100px;
+  color: grey;
+}
+
+#contactForm form button,
+#jobApplyForm button {
+  width: 100%;
+  padding: 1rem;
+}
+
+#contactForm form .form-group.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #contactForm form .form-group.upload-btn-wrapper {
+    margin-bottom: 1.5rem;
+  }
+}
+
+#newsDetail img {
+  padding: 1rem 0;
+}
+
+#newsDetail h4 {
+  color: #0179E5;
+  font-weight: 400;
+}
+
+.modal-title {
+  margin-left: 1rem;
+}
+
+.jobDetail h3 {
+  padding-top: 1rem;
+}
+
+.jobSum {
+  color: #fff;
+  background-color: #0179E5;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+}
+
+.jobSum .wrapper {
+  padding: 2rem;
+}
+
+.upload-btn {
+  border-color: 2px solid #0179E5;
+  color: #0179E5;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.upload-btn-wrapper:hover .upload-btn {
+  color: #fff;
+  background-color: #0179E5;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload-btn-wrapper input[type=file]:hover .upload-btn {
+  color: red;
+}
+
+.jobCard,
+.newsCard {
+  text-align: center;
+  padding: 0.75rem 0;
+  margin: 1rem 0;
+  border: 5px solid rgba(0, 0, 0, 0);
+  border-bottom: 5px solid #003666;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.66);
+}
+
+.newsCard {
+  padding: 0;
+}
+
+.newsCard .card-img-top {
+  border-radius: 0px;
+}
+
+.jobCard:hover,
+.newsCard:hover {
+  border-color: #0179E5;
+  border-bottom-color: #0179E5;
+}
+
+.jobCard .card-text {
+  text-align: left;
+}
+
+.jobCard .salary {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #0B8AFC;
+}
+
+.jobCard a,
+.newsCard a {
+  display: block;
+  color: #fff;
+  background-color: #003666;
+  border: 2px solid #003666;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.jobCard hr {
+  width: 50%;
+  border-color: #003666;
+  border-width: 5px;
+}
+
+/* Page Footer */
+
+#pageFooter {
+  margin-top: 2rem;
+}
+
+#pageFooter section:nth-child(2) hr {
+  border-color: #fff;
+  padding: 0.5rem 0;
+  width: 50%;
+}
+
+#pageFooter section:nth-child(1) {
+  background-color: #0179E5;
+}
+
+#pageFooter section:nth-child(1) a {
+  color: #fff;
+}
+
+#pageFooter section:nth-child(1) a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+#pageFooter section:nth-child(1) h4 {
+  margin: 0;
+  padding: 0.7rem 0;
+}
+
+#pageFooter section:nth-child(2) {
+  background-color: #202020;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+}
+
+#pageFooter section:nth-child(2) a.nav-link {
+  color: #fff;
+  font-weight: 700;
+}
+
+#pageFooter section:nth-child(2) a.nav-link:hover {
+  opacity: 0.8;
+}
+
+#pageFooter section:nth-child(2) svg {
+  fill: #fff;
+}
+
+#pageFooter section:nth-child(2) svg:nth-child(2) {
+  margin-left: 2rem;
+  margin-right: 0;
+}
+
+#pageFooter section:nth-child(3) p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
