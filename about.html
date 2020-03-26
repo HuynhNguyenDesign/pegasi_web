@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Aditional CSS-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brand_carousel.css">
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
@@ -47,12 +48,12 @@
     <!-- About Us -->
     <section id="aboutUs">
       <div class="container">
-        <h1 class="text-center text-md-left">About Us</h1>
+        <h1 class="text-center text-md-left"><span class="underline-effect">About Us</span></h1>
         <p>Pegasi was founded in 2018, we are focusing on recruiting and providing talents to our clients in the professional Information Technology Market in Vietnam. We deliver the consistency and reliable services so that PEGASI is well recruited to assist
           clients in business and consult candidates in career path. We communicate to understand the expectation of our clients and candidates to save time in having RIGHT talents and finding SUITABLE positions.</p>
         <!-- Industry Focused -->
         <section id="industryFocus">
-          <h3 class="text-center text-md-left">Industry focus</h3>
+          <h3 class="text-center text-md-left"><span class="underline-effect">Industry focus</span></h3>
           <div class="row">
 
             <div class="col-12 col-md-3">
@@ -87,7 +88,7 @@
         </section>
         <!-- Specialized Roles -->
         <section id="specializedRoles">
-          <h3 class="text-center text-md-left">Specialized roles</h3>
+          <h3 class="text-center text-md-left"><span class="underline-effect">Specialized roles</span></h3>
 
           <div class="row">
             <div class="col-12 col-md-3">
@@ -215,10 +216,10 @@
         <!-- Our team -->
         <section id="ourTeam">
           <div class="container">
-            <h1 class="text-center text-md-left">Our team</h1>
+            <h1 class="text-center text-md-left"><span class="underline-effect">Our Team</span></h1>
             <div class="row text-center">
               <div class="col-12 col-md-3">
-                <svg class="mx-auto d-block" width="220" height="220">
+                <svg class="img-fluid mx-auto d-block" width="220" height="220">
                   <rect width="220" height="220"/>
                 </svg>
                 <h5>Member Name</h5>
@@ -251,13 +252,48 @@
         <!-- Our Clients -->
         <section id="ourClient">
           <div class="container">
-            <h1> Our clients</h1>
+            <h1 class="text-center text-md-left" style="color:grey"> Our Clients</h1>
+
+            <div id="clientSlide" class="carousel slide" data-ride="carousel" data-pause="hover">
+
+              <div class="carousel-inner row w-100 mx-auto" role="listbox">
+
+                <div class="carousel-item col-12 col-sm-6 col-md-2 active">
+                  <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-2">
+                    <img src="img/brand-logo.svg" class="img-fluid d-block" alt="img1" style="width:140px">
+                </div>
+
+            </div>
+
+            </div>
+
           </div>
         </section>
         <!-- Contact Form -->
         <section id="contactForm">
           <div class="container">
-            <h1 class="text-center text-md-left">Leave us a massage</h1>
+            <h1 class="text-center text-md-left"><span class="underline-effect">Leave us a massage</span></h1>
             <form action="#">
 
               <div class="row">
@@ -286,25 +322,25 @@
 
               <div class="row">
                 <div class="container">
-                <label>What are you looking for?</label><br>
+                  <label>What are you looking for?</label><br>
 
-                <!-- <div class="form-check col-12 col-md-6"> -->
+                  <!-- <div class="form-check col-12 col-md-6"> -->
 
-                    <input class="input-radio" type="radio" name="lookingFor" id="newJob" value="newJob">
-                    <label class="radio-label" for="newJob">
-                      I am looking for a new job opportunity
+                  <input class="input-radio" type="radio" name="lookingFor" id="newJob" value="newJob">
+                  <label class="radio-label" for="newJob">
+                      New job opportunity
                     </label>
 
-                <!-- </div> -->
+                  <!-- </div> -->
 
-                <!-- <div class="form-check col-12 col-md-6"> -->
+                  <!-- <div class="form-check col-12 col-md-6"> -->
 
-                    <input class="input-radio" type="radio" name="lookingFor" id="recruit" value="newJob" checked>
-                    <label class="radio-label" for="recruit">
-                      I require recruirment service
+                  <input class="input-radio" type="radio" name="lookingFor" id="recruit" value="newJob" checked>
+                  <label class="radio-label" for="recruit">
+                      Recruirment service
                     </label>
 
-                <!-- </div> -->
+                  <!-- </div> -->
                 </div>
               </div>
 
