@@ -87,6 +87,7 @@ a.btn {
   color: #fff;
   font-weight: bold;
   padding: 0.8rem 1rem;
+  transition: all 0.2s;
 }
 
 #mainNav a:hover, #mainNav a.active {
@@ -231,16 +232,29 @@ a.btn-more:hover {
   margin: 1.5rem 0;
 }
 
-#contactForm form label,
+#contactForm form label:not(.radio-label),
 #jobApplyForm label {
   font-weight: 700;
 }
 
-#contactForm form .radio-btn-wrapper {
+#contactForm form .radio-label {
   border: 2px solid grey;
   padding: 1rem;
   border-radius: 100px;
   color: grey;
+  transition: all 0.2s;
+}
+
+#contactForm form .input-radio {
+  display: none;
+  /* visibility: hidden; */
+}
+
+#contactForm form .input-radio:checked + .radio-label {
+  background-color: #0056A4;
+  border-color: #0056A4;
+  color: #fff;
+  font-weight: 700;
 }
 
 #contactForm form button,
