@@ -238,10 +238,11 @@ a.btn-more:hover {
 }
 
 #contactForm form .radio-label {
-  border: 2px solid grey;
-  padding: 1rem;
+  background-color: lightgrey;
+  padding: 0.75rem 1.5rem;
   border-radius: 100px;
   color: grey;
+  text-decoration: line-through;
   transition: all 0.2s;
 }
 
@@ -252,9 +253,9 @@ a.btn-more:hover {
 
 #contactForm form .input-radio:checked + .radio-label {
   background-color: #0056A4;
-  border-color: #0056A4;
   color: #fff;
   font-weight: 700;
+  text-decoration: none;
 }
 
 #contactForm form button,
