@@ -237,7 +237,8 @@ a.btn-more:hover {
   font-weight: 700;
 }
 
-#contactForm form .radio-label {
+#contactForm form .radio-label,
+#searchForm form .check-box-label {
   background-color: lightgrey;
   padding: 0.75rem 1.5rem;
   border-radius: 100px;
@@ -246,12 +247,18 @@ a.btn-more:hover {
   transition: all 0.2s;
 }
 
-#contactForm form .input-radio {
+#searchForm form .check-box-label {
+  margin-bottom: 1rem;
+}
+
+#contactForm form .input-radio,
+#searchForm form .input-check-box {
   display: none;
   /* visibility: hidden; */
 }
 
-#contactForm form .input-radio:checked + .radio-label {
+#contactForm form .input-radio:checked + .radio-label,
+#searchForm form .input-check-box:checked + .check-box-label {
   background-color: #0056A4;
   color: #fff;
   font-weight: 700;
@@ -339,9 +346,9 @@ a.btn-more:hover {
   border: 5px solid rgba(0, 0, 0, 0);
   border-bottom: 5px solid #003666;
   transition: all 0.2s;
-  -webkit-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.66);
-  box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
 }
 
 .newsCard {
