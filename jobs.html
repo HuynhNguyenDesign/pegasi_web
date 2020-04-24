@@ -1,38 +1,37 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pegasi | Recruitment at its finest</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Aditional CSS-->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-
-  <title>Pegasi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- Slick Theme -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
 </head>
 
 <body>
-  <!-- Main Header -->
-  <header id="pageHeader">
+
+  <!-- Website Header -->
+  <header>
     <div class="container">
-      <!-- Main Navigation -->
       <nav class="navbar navbar-expand-md">
-        <!-- Pegasi Brand Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img id="logo" src="img/brand-logo.svg" alt="Pegasi Logo">
-        </a>
-        <!-- Mobile Menu Btn -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navToggleIcon text-uppercase font-weight-bold text-light">menu</span>
+        <!-- Pegasi Logo -->
+        <a href="./index.html" class="navbar-brand"><img src="./img/brand-logo.svg" alt="Pegasi Logo"></a>
+        <!-- Main Navigation Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+          <i class="fas fa-bars"></i>
         </button>
-        <!-- Menu -->
-        <div class="collapse navbar-collapse mt-md-0 justify-content-end" id="mainNav">
+        <!-- Main Navigation -->
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Homepage</a></li>
+            <li class="nav-item"><a class="nav-link" href="index2.html">Homepage 2</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link active" href="jobs.html">Jobs Board</a></li>
             <li class="nav-item"><a class="nav-link" href="news.html">Industry News</a></li>
@@ -41,312 +40,436 @@
       </nav>
     </div>
   </header>
+  <!-- End of Website Header -->
 
-  <!-- Main Body Content -->
+  <!-- Website Main Body -->
   <main>
-    <!-- Search Form -->
-    <section id="searchForm">
+
+    <!-- Start of Job Search Form -->
+    <section id="job-search-form">
       <div class="container">
-        <h1 class="text-center text-md-left"><span class="underline-effect">Search for jobs</span></h1>
+        <h2><span class="underline">search our jobs</span></h2>
+
         <form action="#">
-
           <div class="row">
-
             <div class="col-12 col-md-8">
               <div class="row">
 
                 <div class="col-12 col-md-6">
+                  <!-- Search term -->
                   <div class="form-group">
-                    <label class="d-none" for="searchTerm">Keywords</label>
-                    <input type="text" class="form-control" id="searchTerm" placeholder="Enter search keywords">
+                    <label for="search-term" class="hidden">Search term</label>
+                    <input type="text" id="search-term" name="search-term" class="form-control" placeholder="Enter your search keywords" required>
                   </div>
                 </div>
 
                 <div class="col-12 col-md-6">
+                  <!-- Search location -->
                   <div class="form-group">
-                    <label class="d-none" for="location">Location</label>
-                    <select class="form-control" id="location">
-                      <option>City 1</option>
-                      <option>City 2</option>
-                      <option>City 3</option>
-                      <option>City 4</option>
-                      <option>City 5</option>
+                    <label for="search-city" class="hidden">City</label>
+                    <select name="search-city" id="search-city" class="form-control">
+                      <option value="">Please choose a city</option>
+                      <option value="hochiminh">Ho Chi Minh City</option>
+                      <option value="hanoi">Ha Noi</option>
+                      <option value="danang">Da Nang</option>
+                      <option value="others">Others</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="col-12">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input input-check-box" type="checkbox" id="php" value="php" checked>
-                    <label class="form-check-label check-box-label" for="php">PHP</label>
+                  <!-- Search Term Checkboxes -->
+                  <div class="form-check">
+                    <!-- Start of One Checkbox -->
+                    <input type="checkbox" id="php" class="form-check-input" value="php" checked>
+                    <label class="form-check-label" for="php">PHP</label>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input input-check-box" type="checkbox" id="js" value="js" checked>
-                    <label class="form-check-label check-box-label" for="js">Javascript</label>
+                  <!-- End of One Checkbox -->
+                  <!-- Start of One Checkbox -->
+                  <div class="form-check">
+                    <input type="checkbox" id="js" class="form-check-input" value="js" checked>
+                    <label class="form-check-label" for="js">Javascript</label>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input input-check-box" type="checkbox" id="html" value="html">
-                    <label class="form-check-label check-box-label" for="html">HTML</label>
+                  <!-- End of One Checkbox -->
+                  <!-- Start of One Checkbox -->
+                  <div class="form-check">
+                    <input type="checkbox" id="html" class="form-check-input" value="html">
+                    <label class="form-check-label" for="html">HTML</label>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input input-check-box" type="checkbox" id="css" value="css">
-                    <label class="form-check-label check-box-label" for="css">CSS</label>
+                  <!-- End of One Checkbox -->
+                  <!-- Start of One Checkbox -->
+                  <div class="form-check">
+                    <input type="checkbox" id="css" class="form-check-input" value="css">
+                    <label class="form-check-label" for="css">CSS</label>
+                  </div>
+                  <div class="form-check">
+                    <!-- End of One Checkbox -->
+                    <!-- Start of One Checkbox -->
+                    <input type="checkbox" id="react" class="form-check-input" value="react">
+                    <label class="form-check-label" for="react">React.js</label>
+                    <!-- End of One Checkbox -->
                   </div>
                 </div>
-
               </div>
             </div>
 
             <div class="col-12 col-md-4">
-              <button class="col-12 btn btn-primary" type="submit">Search</button>
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-success">Search</button>
             </div>
 
-            <!-- <div class="col-12 col-md-4">
-              <div class="form-group">
-                <label class="d-none" for="searchTerm">Keywords</label>
-                <input type="text" class="form-control" id="searchTerm" placeholder="Enter search keywords">
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <div class="form-group">
-                <label class="d-none" for="location">Location</label>
-                <select class="form-control" id="location">
-                  <option>City 1</option>
-                  <option>City 2</option>
-                  <option>City 3</option>
-                  <option>City 4</option>
-                  <option>City 5</option>
-                </select>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-12 col-md-4">
-              <button class="btn btn-primary" type="submit">Search</button>
-            </div> -->
           </div>
-
         </form>
-        <hr>
+      </div>
     </section>
-
-    <!-- <div class="row">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input input-check-box" type="checkbox" id="php" value="php" checked>
-        <label class="form-check-label check-box-label" for="php">PHP</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input input-check-box" type="checkbox" id="js" value="js" checked>
-        <label class="form-check-label check-box-label" for="js">Javascript</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input input-check-box" type="checkbox" id="html" value="html">
-        <label class="form-check-label check-box-label" for="html">HTML</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input input-check-box" type="checkbox" id="css" value="css">
-        <label class="form-check-label check-box-label" for="css">CSS</label>
-      </div>
-    </div> -->
-
-    </div>
-
-    <!-- Search Result -->
-    <section id="searchResult">
+    <!-- End of Job Search Form -->
+    <hr>
+    <!-- Start of Job Search Result -->
+    <section id="job-search-result">
       <div class="container">
         <div class="row">
-
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
           <div class="col-12 col-md-4">
-            <div class="card jobCard">
+            <div class="card jobcard">
               <div class="card-body">
-                <h3 class="card-title">Job Title</h3>
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
                 <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi perferendis necessitatibus reprehenderit animi harum sunt voluptatem doloremque mollitia ullam deleniti minima cum incidunt eligendi voluptatum, numquam. Illo voluptatibus,
-                  ipsum?
-                </p>
-                <h4 class="salary">$3000-$4000</h4>
-                <a href="job-detail.html" class="btn btn-primary">View Detail</a>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
               </div>
             </div>
           </div>
-
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
+                <hr>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
+                <hr>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
+          <!-- Start of One Job Card -->
+          <div class="col-12 col-md-4">
+            <div class="card jobcard">
+              <div class="card-body">
+                <h4 class="jobtitle">Technical Architect</h4>
+                <p class="joblocation"><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
+                <hr>
+                <p class="companytype">finance, product company</p>
+                <ul class="skill">
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>Golang</li>
+                  <li>NodeJS</li>
+                  <li>PHP</li>
+                </ul>
+                <p class="jobsummary">The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions.</p>
+                <h4 class="jobsalary">negotiable</h4>
+                <a href="job-detail.html" class="btn btn-outline-primary">View detail</a>
+              </div>
+            </div>
+          </div>
+          <!-- End of One Job Card -->
         </div>
-        <a href="#" class="btn btn-outline-primary d-block mx-auto btn-more">load more</a>
+        <a href="#" class="btn btn-outline-primary btn-more">load more</a>
       </div>
     </section>
+    <!-- End of Job Search Result -->
 
   </main>
+  <!-- End of Website Main body -->
 
-  <!-- Main Footer -->
-  <footer id="pageFooter">
-    <!-- Footer Question -->
-    <section class="text-center">
+  <!-- Website Footer -->
+  <footer>
+    <!-- <div class="container-fluid"> -->
+    <!-- Link to Contact Form -->
+    <section>
       <div class="container">
-        <h4><a href="about.html#contactForm">Got any questions? Leave us a message!</a></h4>
+        <h5><a href="about.html#stop">Got any questions? Leave us a message!</a></h5>
       </div>
     </section>
-
+    <!-- Footer Nav -->
     <section>
       <div class="container">
         <div class="row">
-          <!-- Footer Navbar -->
-          <div class="col-xs-12 col-md-4">
-            <nav class="nav flex-md-column justify-content-center">
-              <a href="index.html" class="nav-link">Homepage</a>
-              <a href="about.html" class="nav-link">About Us</a>
-              <a href="jobs.html" class="nav-link">Jobs</a>
-              <a href="news.html" class="nav-link">News</a>
+          <!-- Footer Nav -->
+          <div class="col-12 col-md-4">
+            <nav>
+              <a href="index.html">Homepage</a>
+              <a href="about.html">About Us</a>
+              <a href="jobs.html">Jobs</a>
+              <a href="news.html">News</a>
             </nav>
-            <hr class="d-block d-md-none">
           </div>
-          <!-- Company Address -->
-          <div class="col-xs-12 col-md-4 text-center text-md-left">
+          <!-- Comany Address -->
+          <div class="col-12 col-md-4">
             <address>
-              <p>Toong, Nguyen Thi Minh Khai, District 3, HCMC, Vietnam</p>
-              <p>+84 28 7109 9077</p>
-              <p>recruit@pegasi.com.vn</p>
-            </address>
-            <hr class="d-block d-md-none">
+                <p>Toong, 126 Nguyen Thi Minh Khai, District 3, Ho Chi Minh, Vietnam </p>
+                <p>+84 28 7109 9077 </p>
+                <p>recruit@pegasi.com.vn</p>
+              </address>
           </div>
-          <!--Social Media Icon-->
-          <div class="col-xs-12 col-md-4 text-center">
-            <svg height="48" width="48">
-             <circle cx="24" cy="24" r="24"/>
-            </svg>
-            <svg height="48" width="48">
-             <circle cx="24" cy="24" r="24"/>
-            </svg>
+          <!-- Social Media Link -->
+          <div class="col-12 col-md-4">
+            <a href="https://www.facebook.com/PEGASI.Recruitment/" target="_blank" class="sociallink"><i class="fab fa-facebook-square"></i><span class="hidden">Facebook</span></a>
+            <a href="https://www.linkedin.com/company/pegasi-recruitment/" target="_blank" class="sociallink"><i class="fab fa-linkedin"></i><span class="hidden">LinkedIn</span></a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Copyrighted Text -->
-    <section class="text-center">
-      <p class="text-muted smallText">Copyrighted &copy; Pegasi</p>
-    </section>
 
+    </section>
+    <!-- Copyright Text -->
+    <section>
+      <div class="conatiner">
+        <p><small>Copyright © <span class="copyyear">2018</span> by Pegasi Recruitment Co., Ltd.</small></p>
+      </div>
+    </section>
+    <!-- </div> -->
   </footer>
+  <!-- End of Website Footer -->
 
+  <!-- Start of Loader Screen -->
+  <div class="loader">
+    <div class="spinner-border text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- End of Loader Screen -->
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- JQuery JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- Popper JS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Optional JavaScript -->
-  <script src="js/app.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b0be376bb4.js" crossorigin="anonymous"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <!-- Main JS file -->
+  <script type="text/javascript" src='./js/app.js'></script>
 </body>
 
 </html>

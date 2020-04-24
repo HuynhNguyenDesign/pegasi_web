@@ -1,38 +1,37 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pegasi | Recruitment at its finest</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Aditional CSS-->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-
-  <title>Pegasi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- Slick Theme -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
 </head>
 
 <body>
-  <!-- Main Header -->
-  <header id="pageHeader">
+
+  <!-- Website Header -->
+  <header>
     <div class="container">
-      <!-- Main Navigation -->
       <nav class="navbar navbar-expand-md">
-        <!-- Pegasi Brand Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img id="logo" src="img/brand-logo.svg" alt="Pegasi Logo">
-        </a>
-        <!-- Mobile Menu Btn -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navToggleIcon text-uppercase font-weight-bold text-light">menu</span>
+        <!-- Pegasi Logo -->
+        <a href="./index.html" class="navbar-brand"><img src="./img/brand-logo.svg" alt="Pegasi Logo"></a>
+        <!-- Main Navigation Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+          <i class="fas fa-bars"></i>
         </button>
-        <!-- Menu -->
-        <div class="collapse navbar-collapse mt-md-0 justify-content-end" id="mainNav">
+        <!-- Main Navigation -->
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Homepage</a></li>
+            <li class="nav-item"><a class="nav-link" href="index2.html">Homepage 2</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link active" href="jobs.html">Jobs Board</a></li>
             <li class="nav-item"><a class="nav-link" href="news.html">Industry News</a></li>
@@ -41,176 +40,246 @@
       </nav>
     </div>
   </header>
+  <!-- End of Website Header -->
 
-  <!-- Main Body Content -->
+  <!-- Website Main Body -->
   <main>
-    <div id="jobDes" class="container">
-      <h1 class="text-center text-md-left"><span class="underline-effect">Job Title</span></h1>
-      <div class="row">
+    <section id="job-content">
+      <div class="container">
+        <h2><span class="underline">Technical Architect</span></h2>
+        <div class="row">
+          <div class="col-12 col-md-8 order-last order-md-first">
+            <div class="jobdesc">
+              <h3>Job Description</h3>
+              <p>The Technical Architect (TA) is our technical champion & advisor entrusted to be driving technical decisions through architectural reviews, technical optimizations, security reviews, and other technical discussions. The TA is also responsible
+                for: </p>
+              <ul>
+                <li>Champion best practices for our technical teams, in regards to the development process, documentation, coding, product quality, maintenance & support </li>
+                <li>Evolve our software architecture to incorporate business and technical requirements while ensuring high scalability, security, and performance. </li>
+                <li>Evaluate & drive proposed technical solutions by weighing the risks, rewards and future implications of each decision and recommending the optimal technical path forward. </li>
+                <li>Guide and motivate our engineering teams to continually improve their skills through mentoring, training, pair programming, code reviews and fostering an environment of excellence. </li>
+                <li>Develop time & effort estimates for all technical implementations and track the progress of technical teams from inception through delivery.</li>
+                <li>Identify bottlenecks in our applications and devise solutions to ensure the best possible performance, quality, scalability, security. </li>
+              </ul>
 
-        <div class="jobDetail col-12 col-md-7 order-2 order-md-1">
-          <h3 class="text-center text-md-left">Job Details</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium quas quidem eligendi, natus dolores asperiores ipsum eaque sint. Id, aliquam! Eveniet sint, laboriosam distinctio iure ratione magnam, veritatis necessitatibus.</p>
-        </div>
+              <h3>Job Requirement</h3>
 
+              <ul>
+                <li>5+ years of experience as a software architect (or similar role) with strong hands-on experience enabling multi-threading, caching techniques, multi-platform synchronization, and microservices. </li>
+                <li>8+ years of experience with architectural patterns for a large, high-scale data platform (e.g., well-designed APIs, high volume data pipelines, efficient algorithms). </li>
+                <li>8+ years of excellent & recent working experience working with technologies like Objective-C, Swift, PHP, Golang, Java, C++, Javascript, NodeJS, Ruby, etc... </li>
+                <li>7+ years of extensive experience building, scaling, managing platforms and APIs.</li>
+                <li>Excellent understanding of DevOps/CloudOps and building high-availability and high availability infrastructure.</li>
+                <li>Leadership that combines persuasiveness, decisiveness, and competitiveness necessary to motivate a team.</li>
+                <li>Experience with application build automation tools like Apache Maven, Jenkins, and Git.</li>
+                <li>Excellent communication skills in English. </li>
+              </ul>
 
-        <div class="col-12 col-md-4 offset-md-1 order-1 order-md-2">
-          <div class="jobSum">
-            <div class="wrapper">
-              <h3 class="text-center text-md-left">Job Summary</h3>
-              <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sapiente beatae ipsam quis qui enim perspiciatis voluptates nulla esse. Velit cum animi mollitia consequatur qui explicabo vel, ratione consequuntur corporis!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sapiente beatae ipsam quis qui enim perspiciatis voluptates nulla esse. Velit cum animi mollitia consequatur qui explicabo vel, ratione consequuntur corporis!</p>
+              <h3>Huge Plus If You Are/Have </h3>
+              <ul>
+                <li>Good understanding of Amazon AWS technologies (or Google Cloud & Azure equivalents) such as EC2, RDS, ECS, ELB, EKS, ...</li>
+                <li>Expert experience developing defense systems & mechanisms against cyber attacks.</li>
+                <li>Good understanding of relational and non-relational database systems</li>
+                <li>Experience evolving monolithic systems into modern microservice architectures</li>
+                <li>Excellent hands-on experience with PaaS, IaaS, CaaS </li>
+              </ul>
+
+              <h3>What’s on offer</h3>
+              <ul>
+                <li>Friendly, flexible, and fun working environment</li>
+                <li>Very attractive salary based on skills and experience</li>
+                <li>Free office lunch</li>
+                <li>Coffee, tea, snack bar every day</li>
+                <li>Full income tax, insurance paid by the company (Net Salary)</li>
+                <li>13th month of salary</li>
+                <li>Great opportunity for career development</li>
+                <li>Company trip, team building, monthly party, etc.</li>
+              </ul>
+
+              <h3>Contact</h3>
+              <ul>
+                <li>PEGASI – IT Recruitment Consultancy</li>
+                <li>Email: <a href="mailto:recruit@pegasi.com.vn">recruit@pegasi.com.vn</a> | Tel: <a href="tel:84 28 7109 9077">+84 28 7109 9077</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 order-first order-md-last jobsum-wrapper">
+            <div class="jobsum">
+              <h3>Job Summary</h3>
+              <div class="row">
+                <div class="col-6 col-md-12">
+                  <p>Comapny Type:</p>
+                  <p>Finance, Product company</p>
+                </div>
+                <div class="col-6 col-md-12">
+                  <p>Technical Skills:</p>
+                  <p>Objective-C, Swift, Golang, NodeJS, PHP</p>
+                </div>
+                <div class="col-6 col-md-12">
+                  <p>Location:</p>
+                  <p><span class="city">Ho Chi Minh City</span> - <span class="country">Vietnam</span></p>
+                </div>
+                <div class="col-6 col-md-12">
+                  <p>Salary:</p>
+                  <p>Negotiable</p>
+                </div>
+                <div class="col-6 col-md-12">
+                  <p>Date Active:</p>
+                  <p>13/11/2019</p>
+                </div>
+                <div class="col-6 col-md-12">
+                  <p>Job ID:</p>
+                  <p>J00334</p>
+                </div>
+                <div class="col-6 col-md-12">
+                  <p>Status:</p>
+                  <p>Active</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-md-4 offset-md-8">
-          <a class="btn btn-success btn-more" data-toggle="modal" data-target="#jobApplyModal" style="border:none;color:#fff">Apply for this job</a>
+        <div class="row">
+          <div class="col-12 col-md-4 offset-md-8">
+            <button type="button" class="btn btn-success btn-apply" data-toggle="modal" data-target="#job-apply-modal">Apply for this job</a>
+          </div>
         </div>
-
-        <div id="jobApplyModal" class="modal fade" tabindex="-1" role="dialog">
-
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-
-              <div class="modal-header">
-                <h2 class="modal-title" id="jobApplyModalLabel">Apply for the job</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+      </div>
+    </section>
+  </main>
+  <!-- End of Website Man Body -->
+  <!-- Start of Job Apply Modal -->
+  <div class="modal fade" id="job-apply-modal" tab-index="-1" role="dialog" aria-labelledby="job-apply-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content container">
+        <div class="modal-header">
+          <div>
+            <h3 class="modal-title" id="job-apply-modal-title">Apply for this job</h3>
+            <small>Fields that are mark with <strong><abbr title="required">*</abbr></strong> are <em>required informations</em>.</small>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times" style="color: inherit"></i></span>
+        </button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="name">Name <strong><abbr title="required">*</abbr></strong></label>
+                    <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email <strong><abbr title="required">*</abbr></strong></label>
+                    <input type="email" id="email" class="form-control" placeholder="john.doe@mail.com" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Phone <strong><abbr title="required">*</abbr></strong></label>
+                    <input type="tel" id="phone" class="form-control" placeholder="+28-999-9999" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="company">Phone</label>
+                    <input type="company" id="company" class="form-control" placeholder="John Doe.Inc">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="msg">Your message</label>
+                    <textarea class="form-control" id="msg" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group cv-wrapper">
+                    <button class="btn btn-outline-primary btn-apply btn-upload">Upload your CV <strong><abbr title="required">*</abbr></strong></button>
+                    <input type="file" name="cv" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <button type="submit" class="btn btn-success btn-apply">apply</button>
+                </div>
               </div>
-
-              <div class="modal-body">
-
-                <div class="container">
-                  <form id="jobApplyForm" action="#">
-
-                    <div class="row">
-                      <div class="form-group col-12 col-md-6">
-                        <label for="name">Name</label>
-                        <input id="name" class="form-control" type="text" placeholder="Your name.">
-                      </div>
-
-                      <div class="form-group col-12 col-md-6">
-                        <label for="email">Email</label>
-                        <input id="email" class="form-control" type="email" placeholder="Your email.">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="form-group col-12 col-md-6">
-                        <label for="phone">Phone</label>
-                        <input id="phone" class="form-control" type="text" placeholder="Your phone number.">
-                      </div>
-
-                      <div class="form-group col-12 col-md-6">
-                        <label for="company">Company Name</label>
-                        <input id="company" class="form-control" type="text" placeholder="Your company name.">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="form-group col-12">
-                        <label for="message">Your Message</label>
-                        <textarea class="form-control" id="message" rows="6"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="upload-btn-wrapper form-group col-12 col-md-6">
-                        <button class="upload-btn btn-outline-primary">Upload your CV or JD</button>
-                        <input type="file" name="CvJd" />
-                      </div>
-
-                      <div class="col-12 col-md-6">
-                        <button type="submit" class="btn btn-success">Submit</button>
-                      </div>
-
-                    </div>
-
-                  </form>
-              </div>
-
-            </div>
-
             </form>
           </div>
         </div>
-
       </div>
-    </div>
-    </div>
-
-    </div>
-  </main>
-
-  <!-- Main Footer -->
-  <footer id="pageFooter">
-    <!-- Footer Question -->
-    <section class="text-center">
-      <div class="container">
-        <h4><a href="about.html#contactForm">Got any questions? Leave us a message!</a></h4>
       </div>
-    </section>
+      <!-- End of Job Apply Modal -->
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <!-- Footer Navbar -->
-          <div class="col-xs-12 col-md-4">
-            <nav class="nav flex-md-column justify-content-center">
-              <a href="index.html" class="nav-link">Homepage</a>
-              <a href="about.html" class="nav-link">About Us</a>
-              <a href="jobs.html" class="nav-link">Jobs</a>
-              <a href="news.html" class="nav-link">News</a>
-            </nav>
-            <hr class="d-block d-md-none">
+      <!-- Website Footer -->
+      <footer>
+        <!-- <div class="container-fluid"> -->
+        <!-- Link to Contact Form -->
+        <section>
+          <div class="container">
+            <h5><a href="about.html#stop">Got any questions? Leave us a message!</a></h5>
           </div>
-          <!-- Company Address -->
-          <div class="col-xs-12 col-md-4 text-center text-md-left">
-            <address>
-              <p>Toong, Nguyen Thi Minh Khai, District 3, HCMC, Vietnam</p>
-              <p>+84 28 7109 9077</p>
-              <p>recruit@pegasi.com.vn</p>
-            </address>
-            <hr class="d-block d-md-none">
+        </section>
+        <!-- Footer Nav -->
+        <section>
+          <div class="container">
+            <div class="row">
+              <!-- Footer Nav -->
+              <div class="col-12 col-md-4">
+                <nav>
+                  <a href="index.html">Homepage</a>
+                  <a href="about.html">About Us</a>
+                  <a href="jobs.html">Jobs</a>
+                  <a href="news.html">News</a>
+                </nav>
+              </div>
+              <!-- Comany Address -->
+              <div class="col-12 col-md-4">
+                <address>
+                <p>Toong, 126 Nguyen Thi Minh Khai, District 3, Ho Chi Minh, Vietnam </p>
+                <p>+84 28 7109 9077 </p>
+                <p>recruit@pegasi.com.vn</p>
+              </address>
+              </div>
+              <!-- Social Media Link -->
+              <div class="col-12 col-md-4">
+                <a href="https://www.facebook.com/PEGASI.Recruitment/" target="_blank" class="sociallink"><i class="fab fa-facebook-square"></i><span class="hidden">Facebook</span></a>
+                <a href="https://www.linkedin.com/company/pegasi-recruitment/" target="_blank" class="sociallink"><i class="fab fa-linkedin"></i><span class="hidden">LinkedIn</span></a>
+              </div>
+            </div>
           </div>
-          <!--Social Media Icon-->
-          <div class="col-xs-12 col-md-4 text-center">
-            <svg height="48" width="48">
-             <circle cx="24" cy="24" r="24"/>
-            </svg>
-            <svg height="48" width="48">
-             <circle cx="24" cy="24" r="24"/>
-            </svg>
+
+        </section>
+        <!-- Copyright Text -->
+        <section>
+          <div class="conatiner">
+            <p><small>Copyright © <span class="copyyear">2018</span> by Pegasi Recruitment Co., Ltd.</small></p>
           </div>
+        </section>
+        <!-- </div> -->
+      </footer>
+      <!-- End of Website Footer -->
+
+      <!-- Start of Loader Screen -->
+      <div class="loader">
+        <div class="spinner-border text-light" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
-    </section>
-    <!-- Copyrighted Text -->
-    <section class="text-center">
-      <p class="text-muted smallText">Copyrighted &copy; Pegasi</p>
-    </section>
+      <!-- End of Loader Screen -->
 
-  </footer>
-
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Optional JavaScript -->
-  <script src="js/app.js"></script>
+      <!-- JQuery JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <!-- Popper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- Slick JS -->
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/b0be376bb4.js" crossorigin="anonymous"></script>
+      <!-- Main JS file -->
+      <script type="text/javascript" src='./js/app.js'></script>
 </body>
 
 </html>

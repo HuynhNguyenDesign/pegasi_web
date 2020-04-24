@@ -6,20 +6,39 @@ Primary color: #0056A4;
 Shade Lv1: #004685;
 Shade Lv2: #003666;
 Black: #202020;
+Lightgrey: #FAFAFA;
+DarkGrey : #444444;
 */
+/* =============== Global Style =============== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html {
   font-size: 16px;
   line-height: 1.5;
 }
 
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  background: #FAFAFA;
+  color: #444444;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 700;
+h1, h2, h3, h4, h5, address, p{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:700;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -42,445 +61,838 @@ h5 {
   font-size: 1.25rem;
 }
 
-.smallText {
-  font-size: 0.625rem;
+h6 {
+  font-size: 1rem;
 }
 
-a.btn {
-  display: block;
-  padding: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.2s;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.underline-effect {
-  background-image: linear-gradient(120deg, #0B8AFC 0%, #0056A4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.3em;
-  background-position: 0 88%;
+ul li {
+  margin: 0.325rem 0;
 }
 
-/* Page Header Style */
-
-#pageHeader {
-  background: #0056A4;
-  padding: 0.5rem 0;
-}
-
-#pageHeader #logo {
-  width: 7.5rem;
-  height: auto;
-}
-
-#pageHeader #logo:hover {
-  opacity: 0.8;
-}
-
-#pageHeader nav {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#mainNav {
-  margin-top: 1rem;
-}
-
-#mainNav .nav-item {
-  margin-left: 1rem;
-}
-
-#mainNav a {
-  color: #fff;
-  font-weight: bold;
-  padding: 0.8rem 1rem;
-  transition: all 0.2s;
-}
-
-#mainNav a:hover, #mainNav a.active {
-  color: #0056A4;
-  background: #fff;
-  border-radius: 5px;
-}
-
-/* Main Section */
-
-.jumbotron {
-  background: #0056A4;
-  border-radius: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .jumbotron {
-    height: 70vh;
+@media (min-width: 768px) {
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: initial;
   }
 }
-
-#carousel {
-  color: #fff;
+/* =====================================
+============= Layout Style =============
+======================================== */
+main > section {
+  padding: 2.5rem 0;
 }
 
-#carousel svg {
-  fill: #fff;
+main > section#about-us {
+  padding-bottom: 0;
 }
 
-#carousel a.btn {
-  display: block;
-  width: 50%;
-  text-transform: uppercase;
+main > section#featured-jobs {
+  /* padding-top: 0; */
+}
+
+main > section#why-choose-us {
+  /* padding: 0;
+  margin-bottom: 0; */
+}
+
+main > section#our-client {
+  /* padding: 0;
+  margin-bottom: 0; */
+}
+
+main > section h2,
+main > section h3,
+main > section h4,
+main > section h5,
+main > section h6 {
+  text-align: center;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  main > section h2,
+  main > section h3,
+  main > section h4,
+  main > section h5 {
+    text-align: left
+  }
+}
+/* =====================================
+=========== Components Style ===========
+======================================== */
+/* section .container,
+header .container {
+  width: 1024px;
+} */
+.hidden {
+  display: none;
+}
+
+.narrow {
+  width: 80%;
+}
+
+.btn {
   font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  border-width: 2px;
 }
 
-#featuredJobs h3 {
-  margin-bottom: 1.5rem;
+.loader {
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #0179E5;
+display:flex;
+justify-content: center;
+align-items: center;
+z-index: 999;
 }
 
-#featuredJobs .container>hr {
-  width: 50%;
-  border-color: #003666;
-  border-width: 5px;
+.loader.loaded {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-a.btn-more {
+.jobcard, .newscard {
+  padding: 0.75rem;
+  margin: 15px 0;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  transition: all 0.3s;
+}
+
+.jobcard .companytype {
+  padding-top: 1.5rem;
+  font-weight: 700;
+  text-align:center;
+  text-transform: capitalize;
+}
+
+.jobcard .skill {
+  padding: 0;
+  padding-top: 0.325rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.jobcard .skill li {
+  display: inline;
+  margin: 0 0.325rem;
+}
+
+.newscard {
+  padding: 0 0 0.75rem 0;
+}
+
+.newscard .newsimg {
+  border-radius: 0.85rem 0.85rem 0 0 ;
+}
+
+.jobcard:hover,
+.jobcard:active,
+.newscard:hover,
+.newscard:active {
+  border-color: #0179E5;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+}
+
+.jobccard .card-body,
+.newscard .card-body, {
+  padding: 1.5rem;
+}
+
+.newscard .card-body {
+  padding-top: 0;
+}
+
+.jobcard .jobtitle,
+.newscard .newstitle {
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.jobcard .jobtitle {
+  padding-bottom: 0.325rem;
+}
+
+.jobcard .joblocation {
+  color: #0056A4;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 1.5rem;
+}
+
+.newscard .newstitle {
+  padding-bottom: 0;
+  padding-top: 1.5rem;
+}
+
+.newscard .newsdate {
   color: #0179E5;
-  border: 2px solid #0179E5;
-  margin: 1rem 0 2rem 0;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-bottom: 1.5rem;
 }
 
-a.btn-more:hover {
+.jobcard hr,
+.newscard hr {
+  margin: 0;
+}
+
+.jobcard .jobsummary,
+.newscard .newssummary {
+  text-align: center;
+  padding: 1.5rem 0 0.75rem 0;
+}
+
+.jobcard .jobsalary {
+  text-align: center;
+  padding: 0.75rem 0 1.5rem 0;
+}
+
+.jobcard .btn,
+.jobcard .btn:visited,
+.newscard .btn,
+.newscard .btn:visited {
+  /* background-color: #003666; */
+  color: #003666;
+  border-color: #003666;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.jobcard .btn:hover,
+.jobcard .btn:active,
+.newscard .btn:hover,
+.newscard .btn:active{
   color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
 }
 
-#aboutUs h1,
-#searchForm h1,
-#jobDes h1,
-#news h1,
-#newsDetail h1 {
-  margin-top: 2rem;
-}
-
-#industryFocus h3 {
+.newscard .btn {
   margin-top: 1.5rem;
 }
 
-#industryFocus svg, #specializedRoles svg {
-  fill: #003666;
-  margin-top: 2rem;
+.btn-more,
+.btn-apply  {
+  display: block;
+  margin-top: 0.75rem;
 }
 
-#specializedRoles svg {
-  fill: #fff;
-  stroke: #003666;
-  stroke-width: 5px;
+.btn-apply {
+  width: 100%;
 }
 
-#specializedRoles svg circle {
-  r: 90px;
+.underline {
+  background-image: linear-gradient(120deg, #0B8AFC 10%, #0179E5 100%);
+ background-repeat: no-repeat;
+ background-size: 100% 0.3em;
+ background-position: 0 88%;
 }
 
-#industryFocus h5, #specializedRoles h5 {
-  margin: 1rem 0 2rem 0;
+@media (min-width:768px) {
+  .btn-more {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* =====================================
+===============Header Style=============
+======================================== */
+header {
+  min-height: 67px;
+  background: #0056A4;
+  position: sticky;
+  top: 0px;
+  left:0px;
+  z-index: 1;
 }
 
-#whyChooseUs {
-  background-color: #004685;
-  padding: 3rem;
-  margin-bottom: 2rem;
-}
-
-#whyChooseUs h1 {
-  color: #fff;
-  margin-bottom: 2rem;
-}
-
-#whyChooseUs div.row h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 5.5rem;
-  margin: 0;
+/* .navbar {
   padding: 0;
-}
-
-/* #whyChooseUs .special  {
-  line-height: 0.5;
 } */
 
-#whyChooseUs div.row p {
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
+.navbar {
+  padding: 0.5rem 0;
 }
 
-#ourTeam h1 {
-  margin-bottom: 2rem;
+.navbar-brand img {
+  width: 100px;
 }
 
-#ourTeam svg {
-  border-radius: 5px;
-}
-
-#ourTeam svg rect {
-  fill: grey;
-}
-
-#ourTeam h5, #ourTeam p {
-  text-transform: uppercase;
-}
-
-#ourTeam h5 {
-  margin-top: 1rem;
-}
-
-#ourClient {
-  background-color: lightgrey;
-  padding: 2rem;
-}
-
-#ourClient .carousel {
-  width: 100%;
-}
-
-#ourClient .slide-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-#clientSlide {
-  padding: 2rem 0;
-}
-
-#clientSlide .carousel-item {
-  padding: 0;
-}
-
-#clientSlide .carousel-item img {
-  margin: 0 auto;
-}
-
-
-#contactForm h1 {
-  margin-bottom: 1rem;
-}
-
-#contactForm form .form-group {
-  margin: 1.5rem 0;
-}
-
-#contactForm form label:not(.radio-label),
-#jobApplyForm label {
-  font-weight: 700;
-}
-
-#contactForm form .radio-label,
-#searchForm form .check-box-label {
-  background-color: lightgrey;
-  padding: 0.75rem 1.5rem;
-  border-radius: 100px;
-  color: grey;
-  text-decoration: line-through;
-  transition: all 0.2s;
-}
-
-#searchForm form .check-box-label {
-  margin-bottom: 1rem;
-}
-
-#contactForm form .input-radio,
-#searchForm form .input-check-box {
-  display: none;
-  /* visibility: hidden; */
-}
-
-#contactForm form .input-radio:checked + .radio-label,
-#searchForm form .input-check-box:checked + .check-box-label {
-  background-color: #0056A4;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-#contactForm form button,
-#jobApplyForm button {
-  width: 100%;
-  padding: 1rem;
-}
-
-#contactForm form .form-group.upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  #contactForm form .form-group.upload-btn-wrapper {
-    margin-bottom: 1.5rem;
+@media(min-width: 768px) {
+  .navbar-brand img {
+    width: 120px;
   }
 }
 
-#newsDetail img {
-  padding: 1rem 0;
+.navbar-brand:hover img {
+  opacity: 0.8;
 }
 
-#newsDetail h4 {
-  color: #0179E5;
+.navbar-toggler {
+  padding: 0;
+}
+
+i.fas {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar .nav-item {
+  padding: 0.5rem 0 0 0;
+}
+
+.navbar .nav-item a.nav-link {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* .navbar .nav-item a.nav-link:hover,
+.navbar .nav-item a.nav-link.active {
+  background-image: linear-gradient(120deg, #fff 0%, #fff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3rem;
+  background-position: 0 90%;
+} */
+
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  .navbar .nav-item {
+    padding: 0.5rem;
+  }
+
+  .navbar .nav-item:last-child {
+    padding-right: 0;
+  }
+
+  .navbar .nav-item a.nav-link {
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+  }
+  .navbar .nav-item a.nav-link:hover,
+  .navbar .nav-item a.nav-link.active {
+    color: #0056A4;
+    background: #fff;
+    border-radius: 2rem;
+  }
+}
+/* =====================================
+===============Footer Style=============
+======================================== */
+
+footer {
+  text-align: center;
+}
+
+footer section:first-child {
+  background: #0056A4;
+  padding: 0.7rem 0;
+}
+
+footer section:first-child a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer section:first-child:hover a {
+  opacity: 0.8;
+}
+
+footer section:nth-child(2) {
+  background-color: #202020;
+  padding: 1rem 0 0 0;
+}
+
+footer section:nth-child(2) nav,
+footer section:nth-child(2) address {
+  margin-bottom: 1rem;
+}
+
+footer section:nth-child(2) nav a {
+  color: #fff;
+  /* font-weight: 700; */
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 0.7rem;
+}
+
+footer section:nth-child(2) nav a:hover {
+  opacity: 0.8;
+}
+
+footer section:nth-child(2) address p {
+  color: #fff;
+}
+
+/* footer section:nth-child(2) address i {
+  display: inline;
+  font-size: 0.8rem;
+  padding-right: 0.5rem;
+} */
+
+footer section:nth-child(2) .sociallink {
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+footer section:nth-child(2) .sociallink i.fab {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 0.7rem;
+}
+
+footer section:nth-child(2) .sociallink:hover i.fab {
+  opacity: 0.8;
+}
+
+footer section:last-child {
+  padding: 0.4rem 0;
+}
+
+footer section:last-child small {
+  color: lightgrey;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width:768px) {
+  footer section:nth-child(2) {
+    text-align: right;
+    padding-right: 1.3rem;
+  }
+
+  /* footer section:nth-child(2) .row div[class^="col"] {
+    display: flex;
+    background-color: red;
+  } */
+
+  footer section:nth-child(2) nav a {
+    display: block;
+    text-align: left;
+  }
+
+  footer section:nth-child(2) address p {
+    text-align: left;
+  }
+
+  footer section:nth-child(2) address p,
+  footer section:nth-child(2) nav a {
+    padding: 0.35rem 0;
+  }
+}
+
+
+/* =====================================
+======= Home Carousel Style ============
+======================================== */
+#home-carousel {
+  background-color: #0056A4;
+}
+
+/* #home-carousel .slideshow {
+  padding: 1rem 0;
+} */
+
+#home-carousel .slidetext {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+#home-carousel .slidetext h2,
+#home-carousel .slidetext p {
+  padding-bottom: 1.5rem;
+}
+
+#home-carousel .slidetext a {
+  margin: 0 auto;
+}
+
+#home-carousel .slideshow img {
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+}
+
+#home-carousel  .slideshow {
+  display: none;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width: 768px) {
+
+  #home-carousel .slidetext {
+    text-align: left;
+  }
+
+  #home-carousel .slideshow {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =====================================
+======= Featured Jobs Style ============
+======================================== */
+
+#featured-jobs,
+#job-search-result,
+#news-board {
+  background-color: #fafafa;
+}
+
+/* =====================================
+=========== Job Search Form ============
+======================================== */
+#job-search-form form input#search-term,
+#job-search-form form select#search-city {
+  /* padding-bottom: 0.7rem; */
+  height: 52px;
+}
+
+/* #job-search-form form div.form-check,
+#contact-form form div.form-check {
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+} */
+
+form div.form-check {
+  display: inline-block;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* #job-search-form form .form-check-input,
+#contact-form form .form-check-input {
+  display: none;
+} */
+
+form .form-check-input {
+  display: none;
+}
+
+/* #job-search-form form .form-check-label {
+  color: lightgrey;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  transition: all 0.3s;
+} */
+
+form .form-check-label {
+  color: lightgrey;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+/* #job-search-form form .form-check-input:checked + label {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+} */
+
+form .form-check-input:checked + label {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+}
+
+#job-search-form form button {
+  width: 100%;
+}
+
+#job-search-form + hr,
+#news-page + hr {
+  width: 78%;
+  margin: 0 auto;
+}
+
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  form div.form-check {
+    padding: 0;
+    padding-top: 0.5rem;
+  }
+}
+
+/* =====================================
+============ Job Page Style ============
+======================================== */
+
+#job-content .jobsum {
+  color: #fff;
+  background: #0056A4;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+#job-content .jobdesc {
+  padding: 0.75rem 0;
+}
+
+#job-content .jobdesc h3,
+#job-content .jobsum h3 {
+  padding: 0.75rem 0;
+}
+
+#job-content .jobsum .row div[class^="col"] p:first-child {
+  font-weight: 700;
+}
+
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  #job-content .jobsum {
+    margin : 0;
+  }
+}
+
+/* =====================================
+=========== Job Apply Modal ============
+======================================== */
+/* #job-apply-modal abbr {
+  color:red;
+} */
+
+abbr {
+  color:red;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form label[class="form-check-label"] {
   font-weight: 400;
 }
 
-.modal-title {
-  margin-left: 1rem;
-}
-
-.jobDetail h3 {
-  padding-top: 1rem;
-}
-
-.jobSum {
-  color: #fff;
-  background-color: #0179E5;
-  /* border: 1px solid red; */
-  border-radius: 5px;
-}
-
-.jobSum .wrapper {
-  padding: 2rem;
-}
-
-.upload-btn {
+.btn-upload {
   border-color: 2px solid #0179E5;
   color: #0179E5;
   background-color: white;
-  padding: 1rem;
   border-radius: 4px;
   transition: all 0.2s;
 }
 
-.upload-btn-wrapper:hover .upload-btn {
+.cv-wrapper:hover .btn-upload {
   color: #fff;
   background-color: #0179E5;
 }
 
-.upload-btn-wrapper input[type=file] {
-  font-size: 100px;
+/* #job-apply-modal .cv-wrapper input[type=file]{
+  font-size: 50px;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+  opacity: 0;
+} */
+
+.cv-wrapper input[type=file]{
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
 }
 
-.upload-btn-wrapper input[type=file]:hover .upload-btn {
-  color: red;
+/* #job-apply-modal .cv-wrapper input[type=file]:hover .btn-upload {
+  background-color:red;
+} */
+
+/* =====================================
+=========== News Article Style =========
+======================================== */
+#article-title h5 {
+  color: #0179E5;
+  letter-spacing: 5px;
 }
 
-.jobCard,
-.newsCard {
-  text-align: center;
+#article-content img {
   padding: 0.75rem 0;
-  margin: 1rem 0;
-  border: 5px solid rgba(0, 0, 0, 0);
-  border-bottom: 5px solid #003666;
-  transition: all 0.2s;
-  -webkit-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
-  box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.66);
 }
 
-.newsCard {
+#article-nav .container .row div.col-6 a.btn span{
+  display: none;
+}
+
+#article-nav .container .row div.col-6 {
+  display: flex;
+}
+
+#article-nav .container .row div.col-6:last-child a.btn {
+  margin-left: auto;
+}
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  #article-nav .container .row div.col-6 a.btn i{
+    display: none;
+  }
+
+  #article-nav .container .row div.col-6 a.btn span{
+    display: inline;
+  }
+}
+
+/* =====================================
+========= Specialization Style =========
+======================================== */
+#specialization h4 {
+  padding: 1.5rem 0;
+}
+
+/* #specialization .row img {
+  display: block;
+  width: 80%;
+  border-radius: 50%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin: 0 auto;
+} */
+
+#specialization .row .icon {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#specialization .row .icon i {
+  color: #0056A4;
+  font-size: 5rem;
+}
+
+#specialization .row .icon-nontech i {
+  color: #0179E5;
+}
+
+
+/* =====================================
+========== Why Choose Us Style =========
+======================================== */
+#why-choose-us {
+  color: #fff;
+  background: #0056A4;
+  text-align: center;
+}
+
+#why-choose-us .container .row div[class^=col] p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#why-choose-us p span.num {
+  font-size: 5.5rem;
+}
+
+#why-choose-us .container .row div[class^=col] p:last-child {
+  font-size: 1.25rem;
+}
+
+#why-choose-us .middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#why-choose-us p span {
+  font-size: 3rem;
+  vertical-align: super;
+}
+
+/* =====================================
+============ Our Team Style ============
+======================================== */
+#our-team h4,
+#our-team h5 {
+  /* padding-top: 1.25rem; */
+  text-align: center;
+  margin: 0;
   padding: 0;
 }
 
-.newsCard .card-img-top {
-  border-radius: 0px;
+#our-team h4 {
+  margin-top: 0.75rem;
 }
 
-.jobCard:hover,
-.newsCard:hover {
-  border-color: #0179E5;
-  border-bottom-color: #0179E5;
+#our-team h5 {
+  color: #0179E5;
+  font-weight: 400;
+  margin-top: 0.325rem;
 }
 
-.jobCard .card-text {
-  text-align: left;
+#our-team .container > .row {
+  padding-top: 0.75rem;
 }
 
-.jobCard .salary {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  color: #0B8AFC;
+#our-team img {
+  border-radius: 1rem;
 }
 
-.jobCard a,
-.newsCard a {
-  display: block;
-  color: #fff;
-  background-color: #003666;
-  border: 2px solid #003666;
-  text-transform: uppercase;
-  font-weight: 700;
+#our-team .memberlink {
+  text-align: center;
+  font-size: 2rem;
 }
 
-.jobCard hr {
-  width: 50%;
-  border-color: #003666;
-  border-width: 5px;
+#our-team .memberlink a {
+  margin: 0 0.75rem;
 }
 
-/* Page Footer */
+/* ============ For MD Screen - ============= */
+@media (max-width: 768px) {
+  #our-team .container > .row {
+    padding-top: 0;
+  }
 
-#pageFooter {
-  margin-top: 2rem;
+  #our-team .container .row > div[class^="col"] {
+    padding-top: 1.5rem;
+  }
+
+  #our-team .container .row > div[class^="col"]:first-child {
+    padding-top: 0.75rem;
+  }
 }
 
-#pageFooter section:nth-child(2) hr {
-  border-color: #fff;
-  padding: 0.5rem 0;
-  width: 50%;
+/* =====================================
+=========== Our Clients Style ==========
+======================================== */
+#our-client {
+  background: lightgrey;
+  overflow-x: hidden;
 }
 
-#pageFooter section:nth-child(1) {
-  background-color: #0179E5;
+#our-client .client-slide .slide {
+  padding: 0 0.75rem;
 }
 
-#pageFooter section:nth-child(1) a {
-  color: #fff;
-}
-
-#pageFooter section:nth-child(1) a:hover {
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-#pageFooter section:nth-child(1) h4 {
-  margin: 0;
-  padding: 0.7rem 0;
-}
-
-#pageFooter section:nth-child(2) {
-  background-color: #202020;
-  color: #fff;
-  padding: 2rem 0 1rem 0;
-}
-
-#pageFooter section:nth-child(2) a.nav-link {
-  color: #fff;
-  font-weight: 700;
-}
-
-#pageFooter section:nth-child(2) a.nav-link:hover {
-  opacity: 0.8;
-}
-
-#pageFooter section:nth-child(2) svg {
-  fill: #fff;
-}
-
-#pageFooter section:nth-child(2) svg:nth-child(2) {
-  margin-left: 2rem;
-  margin-right: 0;
-}
-
-#pageFooter section:nth-child(3) p {
-  margin: 0;
-  padding: 0.5rem 0;
+#our-client .client-slide .slide img {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
 }
