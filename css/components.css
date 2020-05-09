@@ -1,0 +1,171 @@
+/* =====================================
+=========== Components Style ===========
+======================================== */
+
+.hidden {
+  display: none;
+}
+
+.narrow {
+  width: 80%;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  border-width: 2px;
+}
+
+.loader {
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #0179E5;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.loader.loaded {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.jobcard, .newscard {
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  transition: all 0.3s;
+}
+
+.jobcard .skill {
+  padding: 0;
+  padding-top: 1.5rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.jobcard .skill li {
+  display: inline;
+  margin: 0 0.325rem;
+}
+
+.newscard {
+  padding: 0 0 0.75rem 0;
+}
+
+.newscard .newsimg {
+  border-radius: 0.85rem 0.85rem 0 0 ;
+}
+
+.jobcard:hover,
+.jobcard:active,
+.newscard:hover,
+.newscard:active {
+  border-color: #0179E5;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+}
+
+.jobccard .card-body,
+.newscard .card-body, {
+  padding: 1.5rem;
+}
+
+.newscard .card-body {
+  padding-top: 0;
+}
+
+.jobcard .jobtitle,
+.newscard .newstitle {
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.newscard .newstitle {
+  padding-bottom: 0;
+  padding-top: 1.5rem;
+}
+
+.newscard .newsdate {
+  color: #0179E5;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-bottom: 1.5rem;
+}
+
+.jobcard hr,
+.newscard hr {
+  margin: 0;
+}
+
+.jobcard .jobsummary,
+.newscard .newssummary {
+  text-align: center;
+  padding: 1.5rem 0 0.75rem 0;
+}
+
+.jobcard .jobsalary {
+  text-align: center;
+  padding: 0.75rem 0 1.5rem 0;
+}
+
+.jobcard .btn,
+.jobcard .btn:visited,
+.newscard .btn,
+.newscard .btn:visited {
+  /* background-color: #003666; */
+  color: #003666;
+  border-color: #003666;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.jobcard .btn:hover,
+.jobcard .btn:active,
+.newscard .btn:hover,
+.newscard .btn:active{
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+}
+
+.newscard .btn {
+  margin-top: 1.5rem;
+}
+
+.btn-more,
+.btn-apply  {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.btn-apply {
+  width: 100%;
+}
+
+.underline {
+  background-image: linear-gradient(120deg, #0B8AFC 10%, #0179E5 100%);
+ background-repeat: no-repeat;
+ background-size: 100% 0.3em;
+ background-position: 0 88%;
+}
+
+@media (min-width:768px) {
+  .btn-more {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

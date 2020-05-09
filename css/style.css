@@ -5,6 +5,7 @@ Tint Lv1: #0179E5;
 Primary color: #0056A4;
 Shade Lv1: #004685;
 Shade Lv2: #003666;
+Orange: #FD4F00;
 Black: #202020;
 Lightgrey: #FAFAFA;
 DarkGrey : #444444;
@@ -192,8 +193,12 @@ z-index: 999;
 }
 
 .jobcard .skill li {
-  display: inline;
-  margin: 0 0.325rem;
+  display: inline-block;
+  margin-right: 0.325rem;
+  margin-left: 0.325rem;
+  padding: 0.325rem 0.7rem;
+  border: 1px solid #0056A4;
+  border-radius: 5px;
 }
 
 .newscard {
@@ -230,6 +235,19 @@ z-index: 999;
 
 .jobcard .jobtitle {
   padding-bottom: 0.325rem;
+}
+
+.jobcard .jobtitle.featured::before {
+  content: "Featured Job";
+  display: block;
+  width: 35%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #FD4F00;
+  margin: 0 auto 0.75rem auto;
+  padding: 0.325rem 0;
+  border-radius: 5px;
 }
 
 .jobcard .joblocation {
@@ -561,7 +579,10 @@ footer section:last-child small {
 #job-search-result,
 #news-board {
   background-color: #fafafa;
+  min-height: 55vh;
 }
+
+
 
 /* =====================================
 =========== Job Search Form ============

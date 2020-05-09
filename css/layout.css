@@ -1,0 +1,42 @@
+/* =====================================
+============= Layout Style =============
+======================================== */
+main > section {
+  padding-bottom: 2.5rem;
+}
+
+main > section:first-child {
+ padding-top: 2.5rem;
+}
+
+main > section#featured-jobs {
+  padding-top: 2.5rem;
+}
+
+main > section#why-choose-us {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+main > section#our-client {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+main > section h2,
+main > section h3,
+main > section h4,
+main > section h5,
+main > section h6 {
+  text-align: center;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  main > section h2,
+  main > section h3,
+  main > section h4,
+  main > section h5 {
+    text-align: left
+  }
+}

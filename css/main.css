@@ -1,0 +1,377 @@
+
+
+/* =====================================
+======= Home Carousel Style ============
+======================================== */
+#home-carousel {
+  background-color: #0056A4;
+}
+
+/* #home-carousel .slideshow {
+  padding: 1rem 0;
+} */
+
+#home-carousel .slidetext {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+#home-carousel .slidetext h2,
+#home-carousel .slidetext p {
+  padding-bottom: 1.5rem;
+}
+
+#home-carousel .slidetext a {
+  margin: 0 auto;
+}
+
+#home-carousel .slideshow img {
+  border-radius: 99rem;
+}
+
+#home-carousel  .slideshow {
+  display: none;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width: 768px) {
+
+  #home-carousel .slidetext {
+    text-align: left;
+  }
+
+  #home-carousel .slideshow {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* =====================================
+======= Featured Jobs Style ============
+======================================== */
+
+#featured-jobs,
+#job-search-result,
+#news-board {
+  background-color: #fafafa;
+}
+
+/* =====================================
+=========== Job Search Form ============
+======================================== */
+#job-search-form form input#search-term,
+#job-search-form form select#search-city {
+  /* padding-bottom: 0.7rem; */
+  height: 52px;
+}
+
+/* #job-search-form form div.form-check,
+#contact-form form div.form-check {
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+} */
+
+form div.form-check {
+  display: inline-block;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* #job-search-form form .form-check-input,
+#contact-form form .form-check-input {
+  display: none;
+} */
+
+form .form-check-input {
+  display: none;
+}
+
+/* #job-search-form form .form-check-label {
+  color: lightgrey;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  transition: all 0.3s;
+} */
+
+form .form-check-label {
+  color: lightgrey;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+/* #job-search-form form .form-check-input:checked + label {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+} */
+
+form .form-check-input:checked + label {
+  color: #fff;
+  background-color: #0179E5;
+  border-color: #0179E5;
+}
+
+#job-search-form form button {
+  width: 100%;
+}
+
+#job-search-form + hr,
+#news-page + hr {
+  width: 78%;
+  margin: 0 auto;
+}
+
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  form div.form-check {
+    padding: 0;
+    padding-top: 0.5rem;
+  }
+}
+
+/* =====================================
+============ Job Page Style ============
+======================================== */
+
+#job-content .jobsum {
+  color: #fff;
+  background: #0056A4;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+#job-content .jobdesc {
+  padding: 0.75rem 0;
+}
+
+#job-content .jobdesc h3,
+#job-content .jobsum h3 {
+  padding: 0.75rem 0;
+}
+
+#job-content .jobsum .row div[class^="col"] p:first-child {
+  font-weight: 700;
+}
+
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  #job-content .jobsum {
+    margin : 0;
+  }
+}
+
+/* =====================================
+=========== Job Apply Modal ============
+======================================== */
+/* #job-apply-modal abbr {
+  color:red;
+} */
+
+abbr {
+  color:red;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form label[class="form-check-label"] {
+  font-weight: 400;
+}
+
+.btn-upload {
+  border-color: 2px solid #0179E5;
+  color: #0179E5;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.cv-wrapper:hover .btn-upload {
+  color: #fff;
+  background-color: #0179E5;
+}
+
+/* #job-apply-modal .cv-wrapper input[type=file]{
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+} */
+
+.cv-wrapper input[type=file]{
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* #job-apply-modal .cv-wrapper input[type=file]:hover .btn-upload {
+  background-color:red;
+} */
+
+/* =====================================
+=========== News Article Style =========
+======================================== */
+#article-title h5 {
+  color: #0179E5;
+  letter-spacing: 5px;
+}
+
+#article-content img {
+  padding: 0.75rem 0;
+}
+
+#article-nav .container .row div.col-6 a.btn span{
+  display: none;
+}
+
+#article-nav .container .row div.col-6 {
+  display: flex;
+}
+
+#article-nav .container .row div.col-6:last-child a.btn {
+  margin-left: auto;
+}
+/* ============ For MD Screen + ============= */
+@media (min-width: 768px) {
+  #article-nav .container .row div.col-6 a.btn i{
+    display: none;
+  }
+
+  #article-nav .container .row div.col-6 a.btn span{
+    display: inline;
+  }
+}
+
+/* =====================================
+========= Specialization Style =========
+======================================== */
+#specialization h4 {
+  padding: 1.5rem 0;
+}
+
+#specialization .row img {
+  display: block;
+  width: 80%;
+  border-radius: 50%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin: 0 auto;
+}
+
+/* =====================================
+========== Why Choose Us Style =========
+======================================== */
+#why-choose-us {
+  color: #fff;
+  background: #0056A4;
+  text-align: center;
+}
+
+#why-choose-us .container .row div[class^=col] p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#why-choose-us p span.num {
+  font-size: 5.5rem;
+}
+
+#why-choose-us .container .row div[class^=col] p:last-child {
+  font-size: 1.25rem;
+}
+
+#why-choose-us .middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#why-choose-us p span {
+  font-size: 3rem;
+  vertical-align: super;
+}
+
+/* =====================================
+============ Our Team Style ============
+======================================== */
+#our-team h4,
+#our-team h5 {
+  /* padding-top: 1.25rem; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#our-team h4 {
+  margin-top: 0.75rem;
+}
+
+#our-team h5 {
+  color: #0179E5;
+  font-weight: 400;
+  margin-top: 0.325rem;
+}
+
+#our-team .container > .row {
+  padding-top: 0.75rem;
+}
+
+#our-team img {
+  border-radius: 1rem;
+}
+
+#our-team .memberlink {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#our-team .memberlink a {
+  margin: 0 0.75rem;
+}
+
+/* ============ For MD Screen - ============= */
+@media (max-width: 768px) {
+  #our-team .container > .row {
+    padding-top: 0;
+  }
+
+  #our-team .container .row > div[class^="col"] {
+    padding-top: 1.5rem;
+  }
+
+  #our-team .container .row > div[class^="col"]:first-child {
+    padding-top: 0.75rem;
+  }
+}
+
+/* =====================================
+=========== Our Clients Style ==========
+======================================== */
+#our-client {
+  background: lightgrey;
+  overflow-x: hidden;
+}
+
+#our-client .client-slide .slide {
+  padding: 0 0.75rem;
+}
+
+#our-client .client-slide .slide img {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}

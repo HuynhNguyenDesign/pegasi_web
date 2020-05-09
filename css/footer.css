@@ -1,0 +1,103 @@
+/* =====================================
+===============Footer Style=============
+======================================== */
+
+footer {
+  text-align: center;
+}
+
+footer section:first-child {
+  background: #0056A4;
+  padding: 0.7rem 0;
+}
+
+footer section:first-child a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer section:first-child:hover a {
+  opacity: 0.8;
+}
+
+footer section:nth-child(2) {
+  background-color: #202020;
+  padding: 1rem 0 0 0;
+}
+
+footer section:nth-child(2) nav,
+footer section:nth-child(2) address {
+  margin-bottom: 1rem;
+}
+
+footer section:nth-child(2) nav a {
+  color: #fff;
+  /* font-weight: 700; */
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 0.7rem;
+}
+
+footer section:nth-child(2) nav a:hover {
+  opacity: 0.8;
+}
+
+footer section:nth-child(2) address p {
+  color: #fff;
+}
+
+/* footer section:nth-child(2) address i {
+  display: inline;
+  font-size: 0.8rem;
+  padding-right: 0.5rem;
+} */
+
+footer section:nth-child(2) .sociallink {
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+footer section:nth-child(2) .sociallink i.fab {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 0.7rem;
+}
+
+footer section:nth-child(2) .sociallink:hover i.fab {
+  opacity: 0.8;
+}
+
+footer section:last-child {
+  padding: 0.4rem 0;
+}
+
+footer section:last-child small {
+  color: lightgrey;
+}
+
+/* ============ For MD Screen + ============= */
+@media(min-width:768px) {
+  footer section:nth-child(2) {
+    text-align: right;
+    padding-right: 1.3rem;
+  }
+
+  /* footer section:nth-child(2) .row div[class^="col"] {
+    display: flex;
+    background-color: red;
+  } */
+
+  footer section:nth-child(2) nav a {
+    display: block;
+    text-align: left;
+  }
+
+  footer section:nth-child(2) address p {
+    text-align: left;
+  }
+
+  footer section:nth-child(2) address p,
+  footer section:nth-child(2) nav a {
+    padding: 0.35rem 0;
+  }
+}
